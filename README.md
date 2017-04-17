@@ -1,6 +1,5 @@
 # Super Simple Stocks
-Super simple stocks is an application to manage trades on a set of stocks and it's a technical test as part of 
-the hiring process for a very important company.
+Super simple stocks is an application to manage trades on a set of stocks.
 
 ### 1. Assignment Description
 
@@ -10,12 +9,12 @@ the hiring process for a very important company.
 
     a.	For a given stock:
     
-        i.    Calculate the dividend yield.
-        ii.   Calculate the P/E Ratio.
-        iii.  Record a trade, with timestamp, quantity of shares, buy or sell indicator and price.
-        iv.   Calculate Stock Price based on trades recorded in past 15 minutes.
+        i.    Given any price as input, calculate the dividend yield.
+        ii.   Given any price as input, calculate the P/E Ratio.
+        iii.  Record a trade, with timestamp, quantity of shares, buy or sell indicator and traded price.
+        iv.   Calculate Volume Weighted Stock Price based on trades in past 15 minutes.
 
-    b.	Calculate the GBCE All Share Index using the geometric mean of prices for all stocks
+    b.	Calculate the GBCE All Share Index using the geometric mean of prices for all stocks.
 
 ##### Constraints & Notes
 
@@ -27,7 +26,7 @@ the hiring process for a very important company.
 
 3.	Formulas and data provided are simplified representations for the purpose of this exercise.
 
-##### Global Beverage Corporation Exchange
+Table1. Sample data from the Global Beverage Corporation Exchange
 
 Stock Symbol  | Type | Last Dividend | Fixed Dividend | Par Value
 ------------- | ---- | ------------: | :------------: | --------: 
