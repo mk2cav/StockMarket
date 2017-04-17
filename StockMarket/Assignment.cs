@@ -13,9 +13,10 @@ namespace StockMarket
         {
             log.Debug("Start Program");
 
-            log.Debug("Create Stock Dictionary");
+            log.Debug("Load stock service");
             StockService stockService = new StockService();
             stockService.LoadStockList();
+            log.Debug("Load trade service");
             TradeService tradeService = new TradeService();
 
             // a) i.
@@ -102,7 +103,6 @@ namespace StockMarket
             Stock ALEStock = stockService.GetStock("ALE");
             if (ALEStock != null)
             {
-                // a) iii.
                 tradeService.RecordTrade(new Trade(DateTime.Now, 100, TradeType.Buy, 10, ALEStock));
                 tradeService.RecordTrade(new Trade(DateTime.Now, 50, TradeType.Buy, 15, ALEStock));
                 tradeService.RecordTrade(new Trade(DateTime.Now, 150, TradeType.Buy, 18, ALEStock));
